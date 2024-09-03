@@ -23,3 +23,12 @@
 
 ### 工作区
 fnm 支持通过在项目根目录下创建 `.nvmrc` 和 `.node-version` 文件写入版本号 `22.7.0` 来设置工作区, 即打开终端时, fnm 会读取文件中记录的 node 版本自动切换到对应的版本, 且不影响 fnm 默认的版本.
+
+## 代码规范
+在 Eslint 最新版本中, 有关代码风格的规则 (如: 句末分号 `semi`) 已被弃用, 所以为了遵循官方方针, 语法检测使用 Eslint, 代码风格使用 Prettier;
+
+### Prettier
+- vscode 插件: 下载 **Prettier - Code formatter**, 并将其设置为默认格式化工具: `"editor.defaultFormatter": "esbenp.prettier-vscode"`;
+- 项目依赖: `npm install --save-dev --save-exact prettier`;
+- 规则: 在 `prettier.config.js` 文件中配置;
+- 缺陷: 配置了 `singleAttributePerLine` 为 `false`, 但是当一行的字符数超过 `printWidth` 值时, html 标签中的属性还是会独占一行.
