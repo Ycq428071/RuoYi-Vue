@@ -18,7 +18,7 @@ export default {
 	requirePragma: false,
 	insertPragma: false,
 	proseWrap: 'preserve',
-	htmlWhitespaceSensitivity: 'ignore',
+	htmlWhitespaceSensitivity: 'css',
 	vueIndentScriptAndStyle: false,
 	endOfLine: 'lf',
 	embeddedLanguageFormatting: 'auto',
